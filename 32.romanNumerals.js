@@ -28,6 +28,8 @@ function solution(number){
       return result;
 }
 
+//test
+
 console.log(solution(1800));
 console.log(solution(1987));
 console.log(solution(2));
