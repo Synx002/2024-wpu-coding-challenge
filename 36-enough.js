@@ -1,9 +1,11 @@
-function enough(cap, on, wait) {
-    if (cap >= on + wait){
-        return 0;
-    }else {
-        return on - wait;
-    }
-}
+// function enough(cap, on, wait) {
+//     if (cap >= on + wait){
+//         return 0;
+//     }else {
+//         return on - wait;
+//     }
+// }
 
-console.log(enough(10, 5, 5));
+const enough = (cap, on, wait) => (cap >= on + wait ? 0 : wait - (cap - on));
+
+console.log(enough(20, 10, 20));
