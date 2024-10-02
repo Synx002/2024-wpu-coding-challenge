@@ -16,9 +16,13 @@
 //     return result;
 // }
 
+// function disemvowelTrolls(str){
+//     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+//     return str.split('').filter(char => !vowels.includes(char)).join('');
+// }
+
 function disemvowelTrolls(str){
-    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
-    return str.split('').filter(char => !vowels.includes(char)).join('');
+    return str.replace(/[aeiou]/gi, '');
 }
 
 console.log(disemvowelTrolls("This website is for losers LOL!"));
